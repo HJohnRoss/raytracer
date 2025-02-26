@@ -1,0 +1,28 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-o",
+      "obj/color.o",
+      "src/color.c"
+    ],
+    "directory": "/home/rossj/code/raytracer",
+    "file": "/home/rossj/code/raytracer/src/color.c",
+    "output": "/home/rossj/code/raytracer/obj/color.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-o",
+      "obj/main.o",
+      "src/main.c"
+    ],
+    "directory": "/home/rossj/code/raytracer",
+    "file": "/home/rossj/code/raytracer/src/main.c",
+    "output": "/home/rossj/code/raytracer/obj/main.o"
+  }
+]
