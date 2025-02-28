@@ -24,5 +24,18 @@
     "directory": "/home/rossj/code/raytracer",
     "file": "/home/rossj/code/raytracer/src/main.c",
     "output": "/home/rossj/code/raytracer/obj/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-o",
+      "obj/ray.o",
+      "src/ray.c"
+    ],
+    "directory": "/home/rossj/code/raytracer",
+    "file": "/home/rossj/code/raytracer/src/ray.c",
+    "output": "/home/rossj/code/raytracer/obj/ray.o"
   }
 ]

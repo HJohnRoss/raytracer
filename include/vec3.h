@@ -42,8 +42,8 @@ vec3 vec3_add(const vec3* u, const vec3* v);
 vec3 vec3_sub(const vec3* u, const vec3* v);
 vec3 vec3_mul_vec(const vec3* u, const vec3* v);
 
-vec3 vec3_mul_scaler(double t, const vec3* v);
-vec3 vec3_div_scaler(double t, const vec3* v);
+vec3 vec3_mul_scalar(double t, const vec3* v);
+vec3 vec3_div_scalar(const vec3* v, double t);
 
 double vec3_dot(const vec3* u, const vec3* v);
 vec3 vec3_cross(const vec3* u, const vec3* v);

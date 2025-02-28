@@ -74,11 +74,11 @@ vec3 vec3_mul_vec(const vec3* u, const vec3* v) {
 	return vec3_create(u->e[0] * v->e[0], u->e[1] * v->e[1], u->e[2] * v->e[2]);
 }
 
-vec3 vec3_mul_scaler(double t, const vec3* v) {
+vec3 vec3_mul_scalar(double t, const vec3* v) {
 	return vec3_create(t * v->e[0],t * v->e[0], t * v->e[0]);
 }
-vec3 vec3_div_scaler(double t, const vec3* v) {
-	return vec3_mul_scaler(1.0 / t, v);
+vec3 vec3_div_scalar(const vec3* v, double t) {
+	return vec3_mul_scalar(1.0 / t, v);
 }
 
 double vec3_dot(const vec3* u, const vec3* v) {
@@ -92,5 +92,5 @@ vec3 vec3_cross(const vec3* u, const vec3* v) {
 	);
 }
 vec3 vec3_unit_vector(const vec3* v) {
-	return vec3_div_scaler(vec3_length(v), v);
+	return vec3_div_scalar(v, vec3_length(v));
 }
